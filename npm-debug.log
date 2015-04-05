@@ -1,0 +1,961 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\Nodejs\\\\node.exe',
+1 verbose cli   'D:\\Program Files\\Nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'serialport2' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose node symlink D:\Program Files\Nodejs\\node.exe
+5 warn package.json codelab@0.0.1 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'serialport2', null ]
+8 verbose cache add name=undefined spec="serialport2" args=["serialport2",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'serialport2',
+9 verbose parsed url   path: 'serialport2',
+9 verbose parsed url   href: 'serialport2' }
+10 silly lockFile 0df840a6-serialport2 serialport2
+11 verbose lock serialport2 C:\Users\Aditya\AppData\Roaming\npm-cache\0df840a6-serialport2.lock
+12 silly lockFile 0df840a6-serialport2 serialport2
+13 silly lockFile 0df840a6-serialport2 serialport2
+14 verbose addNamed [ 'serialport2', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile e94970ef-serialport2 serialport2@
+17 verbose lock serialport2@ C:\Users\Aditya\AppData\Roaming\npm-cache\e94970ef-serialport2.lock
+18 silly addNameRange { name: 'serialport2', range: '*', hasData: false }
+19 verbose request where is /serialport2
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id cae85eb722b9df86
+22 verbose url raw /serialport2
+23 verbose url resolving [ 'https://registry.npmjs.org/', './serialport2' ]
+24 verbose url resolved https://registry.npmjs.org/serialport2
+25 verbose request where is https://registry.npmjs.org/serialport2
+26 info trying registry request attempt 1 at 16:52:36
+27 verbose etag "A6B7QLI1ZMAUTIMHMHRSR7IHO"
+28 http GET https://registry.npmjs.org/serialport2
+29 http 304 https://registry.npmjs.org/serialport2
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:40 GMT',
+30 silly registry.get     server: 'Apache',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:22:40 GMT',
+30 silly registry.get     'cache-control': 'max-age=60',
+30 silly registry.get     etag: '"A6B7QLI1ZMAUTIMHMHRSR7IHO"',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1428232960.207685,VS0,VE247',
+30 silly registry.get     vary: 'Accept',
+30 silly registry.get     'content-length': '0',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 verbose etag https://registry.npmjs.org/serialport2 from cache
+32 silly addNameRange number 2 { name: 'serialport2', range: '*', hasData: true }
+33 silly addNameRange versions [ 'serialport2',
+33 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+34 verbose addNamed [ 'serialport2', '0.0.5' ]
+35 verbose addNamed [ '0.0.5', '0.0.5' ]
+36 silly lockFile d5afd329-serialport2-0-0-5 serialport2@0.0.5
+37 verbose lock serialport2@0.0.5 C:\Users\Aditya\AppData\Roaming\npm-cache\d5afd329-serialport2-0-0-5.lock
+38 warn deprecated serialport2@0.0.5: Development has moved to serialport
+39 silly lockFile d5afd329-serialport2-0-0-5 serialport2@0.0.5
+40 silly lockFile d5afd329-serialport2-0-0-5 serialport2@0.0.5
+41 silly lockFile e94970ef-serialport2 serialport2@
+42 silly lockFile e94970ef-serialport2 serialport2@
+43 silly resolved [ { name: 'serialport2',
+43 silly resolved     description: 'node.js serial port driver.',
+43 silly resolved     author: { name: 'Joe Ferner', email: 'joe.ferner@nearinfinity.com' },
+43 silly resolved     keywords: [ 'serial', 'serialport', 'com', 'comport', 'arduino' ],
+43 silly resolved     version: '0.0.5',
+43 silly resolved     engines: { node: '>=0.6.0' },
+43 silly resolved     maintainers: [ [Object] ],
+43 silly resolved     bugs: { url: 'https://github.com/joeferner/node-serialport2/issues' },
+43 silly resolved     license: 'MIT',
+43 silly resolved     repository:
+43 silly resolved      { type: 'git',
+43 silly resolved        url: 'git://github.com/joeferner/node-serialport2.git' },
+43 silly resolved     dependencies:
+43 silly resolved      { bindings: '0.3.0',
+43 silly resolved        async: '0.1.18',
+43 silly resolved        sf: '0.1.3',
+43 silly resolved        optimist: '~0.3.4' },
+43 silly resolved     devDependencies: { nodeunit: '~0.7.4' },
+43 silly resolved     scripts: { test: 'node ./node_modules/nodeunit/bin/nodeunit test' },
+43 silly resolved     main: './index.js',
+43 silly resolved     bin:
+43 silly resolved      { serialportlist: './bin/serialportList.js',
+43 silly resolved        serialportterm: './bin/serialportTerminal.js' },
+43 silly resolved     _npmUser: { name: 'joeferner', email: 'joe@fernsroth.com' },
+43 silly resolved     _id: 'serialport2@0.0.5',
+43 silly resolved     _engineSupported: true,
+43 silly resolved     _npmVersion: '1.1.0-alpha-6',
+43 silly resolved     _nodeVersion: 'v0.7.8',
+43 silly resolved     _defaultsLoaded: true,
+43 silly resolved     dist:
+43 silly resolved      { shasum: 'd74af5ad22e77518c40aa9f5c58586df0d38fe17',
+43 silly resolved        tarball: 'http://registry.npmjs.org/serialport2/-/serialport2-0.0.5.tgz' },
+43 silly resolved     deprecated: 'Development has moved to serialport',
+43 silly resolved     directories: {},
+43 silly resolved     _shasum: 'd74af5ad22e77518c40aa9f5c58586df0d38fe17',
+43 silly resolved     _from: 'serialport2@',
+43 silly resolved     _resolved: 'https://registry.npmjs.org/serialport2/-/serialport2-0.0.5.tgz',
+43 silly resolved     readme: 'ERROR: No README data found!',
+43 silly resolved     homepage: 'https://github.com/joeferner/node-serialport2' } ]
+44 info install serialport2@0.0.5 into C:\Users\Aditya\codelab\complete\step6
+45 info installOne serialport2@0.0.5
+46 verbose node_modules\serialport2 unbuild
+47 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz
+48 silly lockFile 15c478ea-e-step6-node-modules-serialport2 tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+49 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2 C:\Users\Aditya\AppData\Roaming\npm-cache\15c478ea-e-step6-node-modules-serialport2.lock
+50 silly lockFile 88a3e727-he-serialport2-0-0-5-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz
+51 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\88a3e727-he-serialport2-0-0-5-package-tgz.lock
+52 silly gunzTarPerm modes [ '777', '666' ]
+53 silly gunzTarPerm extractEntry lib/
+54 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+55 silly gunzTarPerm extractEntry lib/serialport.js
+56 silly gunzTarPerm modified mode [ 'lib/serialport.js', 420, 438 ]
+57 silly gunzTarPerm extractEntry test/
+58 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+59 silly gunzTarPerm extractEntry test/arduinioEcho/
+60 silly gunzTarPerm modified mode [ 'test/arduinioEcho/', 493, 511 ]
+61 silly gunzTarPerm extractEntry test/arduinioEcho/arduinioEcho.ino
+62 silly gunzTarPerm modified mode [ 'test/arduinioEcho/arduinioEcho.ino', 420, 438 ]
+63 silly gunzTarPerm extractEntry test/echoTest.js
+64 silly gunzTarPerm modified mode [ 'test/echoTest.js', 420, 438 ]
+65 silly gunzTarPerm extractEntry .idea/
+66 silly gunzTarPerm modified mode [ '.idea/', 493, 511 ]
+67 silly gunzTarPerm extractEntry .idea/node-serialport2.iml
+68 silly gunzTarPerm modified mode [ '.idea/node-serialport2.iml', 420, 438 ]
+69 silly gunzTarPerm extractEntry .idea/misc.xml
+70 silly gunzTarPerm modified mode [ '.idea/misc.xml', 420, 438 ]
+71 silly gunzTarPerm extractEntry .idea/vcs.xml
+72 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 420, 438 ]
+73 silly gunzTarPerm extractEntry .idea/workspace.xml
+74 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 420, 438 ]
+75 silly gunzTarPerm extractEntry .idea/.name
+76 silly gunzTarPerm modified mode [ '.idea/.name', 420, 438 ]
+77 silly gunzTarPerm extractEntry .idea/modules.xml
+78 silly gunzTarPerm modified mode [ '.idea/modules.xml', 420, 438 ]
+79 silly gunzTarPerm extractEntry .idea/encodings.xml
+80 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 420, 438 ]
+81 silly gunzTarPerm extractEntry .idea/scopes/
+82 silly gunzTarPerm modified mode [ '.idea/scopes/', 493, 511 ]
+83 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+84 silly gunzTarPerm modified mode [ '.idea/scopes/scope_settings.xml', 420, 438 ]
+85 silly gunzTarPerm extractEntry binding.gyp
+86 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+87 silly gunzTarPerm extractEntry src/
+88 silly gunzTarPerm modified mode [ 'src/', 493, 511 ]
+89 silly gunzTarPerm extractEntry src/serialport.cpp
+90 silly gunzTarPerm modified mode [ 'src/serialport.cpp', 420, 438 ]
+91 silly gunzTarPerm extractEntry src/win/
+92 silly gunzTarPerm modified mode [ 'src/win/', 493, 511 ]
+93 silly gunzTarPerm extractEntry src/win/disphelper.h
+94 silly gunzTarPerm modified mode [ 'src/win/disphelper.h', 420, 438 ]
+95 silly gunzTarPerm extractEntry src/win/disphelper.c
+96 silly gunzTarPerm modified mode [ 'src/win/disphelper.c', 420, 438 ]
+97 silly gunzTarPerm extractEntry src/serialport_unix.cpp
+98 silly gunzTarPerm modified mode [ 'src/serialport_unix.cpp', 420, 438 ]
+99 silly gunzTarPerm extractEntry src/serialport.h
+100 silly gunzTarPerm modified mode [ 'src/serialport.h', 420, 438 ]
+101 silly gunzTarPerm extractEntry src/serialport_win.cpp
+102 silly gunzTarPerm modified mode [ 'src/serialport_win.cpp', 420, 438 ]
+103 silly gunzTarPerm extractEntry .gitignore
+104 silly gunzTarPerm modified mode [ '.gitignore', 420, 438 ]
+105 silly gunzTarPerm extractEntry index.js
+106 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+107 silly gunzTarPerm extractEntry bin/
+108 silly gunzTarPerm modified mode [ 'bin/', 493, 511 ]
+109 silly gunzTarPerm extractEntry bin/serialportList.js
+110 silly gunzTarPerm modified mode [ 'bin/serialportList.js', 493, 511 ]
+111 silly gunzTarPerm extractEntry bin/serialportTerminal.js
+112 silly gunzTarPerm modified mode [ 'bin/serialportTerminal.js', 493, 511 ]
+113 silly gunzTarPerm extractEntry package.json
+114 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+115 silly gunzTarPerm extractEntry README.md
+116 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+117 silly lockFile 15c478ea-e-step6-node-modules-serialport2 tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+118 silly lockFile 15c478ea-e-step6-node-modules-serialport2 tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+119 silly lockFile 88a3e727-he-serialport2-0-0-5-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz
+120 silly lockFile 88a3e727-he-serialport2-0-0-5-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\serialport2\0.0.5\package.tgz
+121 info preinstall serialport2@0.0.5
+122 verbose readDependencies using package.json deps
+123 verbose readDependencies using package.json deps
+124 verbose cache add [ 'bindings@0.3.0', null ]
+125 verbose cache add name=undefined spec="bindings@0.3.0" args=["bindings@0.3.0",null]
+126 verbose parsed url { protocol: null,
+126 verbose parsed url   slashes: null,
+126 verbose parsed url   auth: null,
+126 verbose parsed url   host: null,
+126 verbose parsed url   port: null,
+126 verbose parsed url   hostname: null,
+126 verbose parsed url   hash: null,
+126 verbose parsed url   search: null,
+126 verbose parsed url   query: null,
+126 verbose parsed url   pathname: 'bindings@0.3.0',
+126 verbose parsed url   path: 'bindings@0.3.0',
+126 verbose parsed url   href: 'bindings@0.3.0' }
+127 verbose cache add [ 'async@0.1.18', null ]
+128 verbose cache add name=undefined spec="async@0.1.18" args=["async@0.1.18",null]
+129 verbose parsed url { protocol: null,
+129 verbose parsed url   slashes: null,
+129 verbose parsed url   auth: null,
+129 verbose parsed url   host: null,
+129 verbose parsed url   port: null,
+129 verbose parsed url   hostname: null,
+129 verbose parsed url   hash: null,
+129 verbose parsed url   search: null,
+129 verbose parsed url   query: null,
+129 verbose parsed url   pathname: 'async@0.1.18',
+129 verbose parsed url   path: 'async@0.1.18',
+129 verbose parsed url   href: 'async@0.1.18' }
+130 verbose cache add [ 'sf@0.1.3', null ]
+131 verbose cache add name=undefined spec="sf@0.1.3" args=["sf@0.1.3",null]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: 'sf@0.1.3',
+132 verbose parsed url   path: 'sf@0.1.3',
+132 verbose parsed url   href: 'sf@0.1.3' }
+133 verbose cache add [ 'optimist@~0.3.4', null ]
+134 verbose cache add name=undefined spec="optimist@~0.3.4" args=["optimist@~0.3.4",null]
+135 verbose parsed url { protocol: null,
+135 verbose parsed url   slashes: null,
+135 verbose parsed url   auth: null,
+135 verbose parsed url   host: null,
+135 verbose parsed url   port: null,
+135 verbose parsed url   hostname: null,
+135 verbose parsed url   hash: null,
+135 verbose parsed url   search: null,
+135 verbose parsed url   query: null,
+135 verbose parsed url   pathname: 'optimist@~0.3.4',
+135 verbose parsed url   path: 'optimist@~0.3.4',
+135 verbose parsed url   href: 'optimist@~0.3.4' }
+136 verbose cache add name="bindings" spec="0.3.0" args=["bindings","0.3.0"]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: '0.3.0',
+137 verbose parsed url   path: '0.3.0',
+137 verbose parsed url   href: '0.3.0' }
+138 verbose addNamed [ 'bindings', '0.3.0' ]
+139 verbose addNamed [ '0.3.0', '0.3.0' ]
+140 silly lockFile a060d42a-bindings-0-3-0 bindings@0.3.0
+141 verbose lock bindings@0.3.0 C:\Users\Aditya\AppData\Roaming\npm-cache\a060d42a-bindings-0-3-0.lock
+142 verbose cache add name="async" spec="0.1.18" args=["async","0.1.18"]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: '0.1.18',
+143 verbose parsed url   path: '0.1.18',
+143 verbose parsed url   href: '0.1.18' }
+144 verbose addNamed [ 'async', '0.1.18' ]
+145 verbose addNamed [ '0.1.18', '0.1.18' ]
+146 silly lockFile b86dcd49-async-0-1-18 async@0.1.18
+147 verbose lock async@0.1.18 C:\Users\Aditya\AppData\Roaming\npm-cache\b86dcd49-async-0-1-18.lock
+148 verbose cache add name="sf" spec="0.1.3" args=["sf","0.1.3"]
+149 verbose parsed url { protocol: null,
+149 verbose parsed url   slashes: null,
+149 verbose parsed url   auth: null,
+149 verbose parsed url   host: null,
+149 verbose parsed url   port: null,
+149 verbose parsed url   hostname: null,
+149 verbose parsed url   hash: null,
+149 verbose parsed url   search: null,
+149 verbose parsed url   query: null,
+149 verbose parsed url   pathname: '0.1.3',
+149 verbose parsed url   path: '0.1.3',
+149 verbose parsed url   href: '0.1.3' }
+150 verbose addNamed [ 'sf', '0.1.3' ]
+151 verbose addNamed [ '0.1.3', '0.1.3' ]
+152 silly lockFile 444a19d3-sf-0-1-3 sf@0.1.3
+153 verbose lock sf@0.1.3 C:\Users\Aditya\AppData\Roaming\npm-cache\444a19d3-sf-0-1-3.lock
+154 verbose cache add name="optimist" spec="~0.3.4" args=["optimist","~0.3.4"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '~0.3.4',
+155 verbose parsed url   path: '~0.3.4',
+155 verbose parsed url   href: '~0.3.4' }
+156 verbose addNamed [ 'optimist', '~0.3.4' ]
+157 verbose addNamed [ null, '>=0.3.4-0 <0.4.0-0' ]
+158 silly lockFile 094c60bd-optimist-0-3-4 optimist@~0.3.4
+159 verbose lock optimist@~0.3.4 C:\Users\Aditya\AppData\Roaming\npm-cache\094c60bd-optimist-0-3-4.lock
+160 silly addNameRange { name: 'optimist', range: '>=0.3.4-0 <0.4.0-0', hasData: false }
+161 verbose request where is /bindings
+162 verbose request registry https://registry.npmjs.org/
+163 verbose url raw /bindings
+164 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+165 verbose url resolved https://registry.npmjs.org/bindings
+166 verbose request where is https://registry.npmjs.org/bindings
+167 info trying registry request attempt 1 at 16:52:38
+168 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+169 http GET https://registry.npmjs.org/bindings
+170 verbose request where is /async
+171 verbose request registry https://registry.npmjs.org/
+172 verbose url raw /async
+173 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+174 verbose url resolved https://registry.npmjs.org/async
+175 verbose request where is https://registry.npmjs.org/async
+176 info trying registry request attempt 1 at 16:52:38
+177 verbose etag "4JIY4QIE6VGPF65T78N32QOT1"
+178 http GET https://registry.npmjs.org/async
+179 verbose request where is /sf
+180 verbose request registry https://registry.npmjs.org/
+181 verbose url raw /sf
+182 verbose url resolving [ 'https://registry.npmjs.org/', './sf' ]
+183 verbose url resolved https://registry.npmjs.org/sf
+184 verbose request where is https://registry.npmjs.org/sf
+185 info trying registry request attempt 1 at 16:52:38
+186 verbose etag "E9CBY419LLKJNH6ENEYTST89H"
+187 http GET https://registry.npmjs.org/sf
+188 verbose request where is /optimist
+189 verbose request registry https://registry.npmjs.org/
+190 verbose url raw /optimist
+191 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+192 verbose url resolved https://registry.npmjs.org/optimist
+193 verbose request where is https://registry.npmjs.org/optimist
+194 info trying registry request attempt 1 at 16:52:38
+195 verbose etag "2N5Z4BS57SZHWX69ZBW5K741P"
+196 http GET https://registry.npmjs.org/optimist
+197 http 304 https://registry.npmjs.org/optimist
+198 silly registry.get cb [ 304,
+198 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:42 GMT',
+198 silly registry.get     server: 'Apache',
+198 silly registry.get     via: '1.1 varnish',
+198 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:22:34 GMT',
+198 silly registry.get     'cache-control': 'max-age=60',
+198 silly registry.get     etag: '"2N5Z4BS57SZHWX69ZBW5K741P"',
+198 silly registry.get     age: '59',
+198 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+198 silly registry.get     'x-cache': 'HIT',
+198 silly registry.get     'x-cache-hits': '2',
+198 silly registry.get     'x-timer': 'S1428232962.186275,VS0,VE0',
+198 silly registry.get     vary: 'Accept',
+198 silly registry.get     'content-length': '0',
+198 silly registry.get     'keep-alive': 'timeout=10, max=50',
+198 silly registry.get     connection: 'Keep-Alive' } ]
+199 verbose etag https://registry.npmjs.org/optimist from cache
+200 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.4-0 <0.4.0-0', hasData: true }
+201 silly addNameRange versions [ 'optimist',
+201 silly addNameRange   [ '0.0.1',
+201 silly addNameRange     '0.0.2',
+201 silly addNameRange     '0.0.4',
+201 silly addNameRange     '0.0.5',
+201 silly addNameRange     '0.0.6',
+201 silly addNameRange     '0.0.7',
+201 silly addNameRange     '0.1.0',
+201 silly addNameRange     '0.1.1',
+201 silly addNameRange     '0.1.2',
+201 silly addNameRange     '0.1.3',
+201 silly addNameRange     '0.1.4',
+201 silly addNameRange     '0.1.5',
+201 silly addNameRange     '0.1.6',
+201 silly addNameRange     '0.1.7',
+201 silly addNameRange     '0.1.8',
+201 silly addNameRange     '0.1.9',
+201 silly addNameRange     '0.0.3',
+201 silly addNameRange     '0.2.0',
+201 silly addNameRange     '0.2.1',
+201 silly addNameRange     '0.2.2',
+201 silly addNameRange     '0.2.3',
+201 silly addNameRange     '0.2.4',
+201 silly addNameRange     '0.2.5',
+201 silly addNameRange     '0.2.6',
+201 silly addNameRange     '0.2.7',
+201 silly addNameRange     '0.2.8',
+201 silly addNameRange     '0.3.0',
+201 silly addNameRange     '0.3.1',
+201 silly addNameRange     '0.3.3',
+201 silly addNameRange     '0.3.4',
+201 silly addNameRange     '0.3.5',
+201 silly addNameRange     '0.3.6',
+201 silly addNameRange     '0.3.7',
+201 silly addNameRange     '0.4.0',
+201 silly addNameRange     '0.5.0',
+201 silly addNameRange     '0.5.1',
+201 silly addNameRange     '0.5.2',
+201 silly addNameRange     '0.6.0',
+201 silly addNameRange     '0.6.1' ] ]
+202 verbose addNamed [ 'optimist', '0.3.7' ]
+203 verbose addNamed [ '0.3.7', '0.3.7' ]
+204 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+205 verbose lock optimist@0.3.7 C:\Users\Aditya\AppData\Roaming\npm-cache\090e1d8d-optimist-0-3-7.lock
+206 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+207 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+208 silly lockFile 094c60bd-optimist-0-3-4 optimist@~0.3.4
+209 silly lockFile 094c60bd-optimist-0-3-4 optimist@~0.3.4
+210 http 304 https://registry.npmjs.org/async
+211 silly registry.get cb [ 304,
+211 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:42 GMT',
+211 silly registry.get     server: 'Apache',
+211 silly registry.get     via: '1.1 varnish',
+211 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:22:42 GMT',
+211 silly registry.get     'cache-control': 'max-age=60',
+211 silly registry.get     etag: '"4JIY4QIE6VGPF65T78N32QOT1"',
+211 silly registry.get     age: '28',
+211 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+211 silly registry.get     'x-cache': 'HIT',
+211 silly registry.get     'x-cache-hits': '1',
+211 silly registry.get     'x-timer': 'S1428232962.227097,VS0,VE0',
+211 silly registry.get     vary: 'Accept',
+211 silly registry.get     'content-length': '0',
+211 silly registry.get     'keep-alive': 'timeout=10, max=50',
+211 silly registry.get     connection: 'Keep-Alive' } ]
+212 verbose etag https://registry.npmjs.org/async from cache
+213 silly lockFile b86dcd49-async-0-1-18 async@0.1.18
+214 silly lockFile b86dcd49-async-0-1-18 async@0.1.18
+215 http 304 https://registry.npmjs.org/sf
+216 silly registry.get cb [ 304,
+216 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:42 GMT',
+216 silly registry.get     server: 'Apache',
+216 silly registry.get     via: '1.1 varnish',
+216 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:22:42 GMT',
+216 silly registry.get     'cache-control': 'max-age=60',
+216 silly registry.get     etag: '"E9CBY419LLKJNH6ENEYTST89H"',
+216 silly registry.get     age: '0',
+216 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+216 silly registry.get     'x-cache': 'HIT',
+216 silly registry.get     'x-cache-hits': '1',
+216 silly registry.get     'x-timer': 'S1428232962.202671,VS0,VE200',
+216 silly registry.get     vary: 'Accept',
+216 silly registry.get     'content-length': '0',
+216 silly registry.get     'keep-alive': 'timeout=10, max=50',
+216 silly registry.get     connection: 'Keep-Alive' } ]
+217 verbose etag https://registry.npmjs.org/sf from cache
+218 silly lockFile 444a19d3-sf-0-1-3 sf@0.1.3
+219 silly lockFile 444a19d3-sf-0-1-3 sf@0.1.3
+220 http 304 https://registry.npmjs.org/bindings
+221 silly registry.get cb [ 304,
+221 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:42 GMT',
+221 silly registry.get     server: 'Apache',
+221 silly registry.get     via: '1.1 varnish',
+221 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:22:42 GMT',
+221 silly registry.get     'cache-control': 'max-age=60',
+221 silly registry.get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+221 silly registry.get     age: '0',
+221 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+221 silly registry.get     'x-cache': 'HIT',
+221 silly registry.get     'x-cache-hits': '1',
+221 silly registry.get     'x-timer': 'S1428232962.113290,VS0,VE819',
+221 silly registry.get     vary: 'Accept',
+221 silly registry.get     'content-length': '0',
+221 silly registry.get     'keep-alive': 'timeout=10, max=50',
+221 silly registry.get     connection: 'Keep-Alive' } ]
+222 verbose etag https://registry.npmjs.org/bindings from cache
+223 silly lockFile a060d42a-bindings-0-3-0 bindings@0.3.0
+224 silly lockFile a060d42a-bindings-0-3-0 bindings@0.3.0
+225 silly resolved [ { name: 'optimist',
+225 silly resolved     version: '0.3.7',
+225 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+225 silly resolved     main: './index.js',
+225 silly resolved     dependencies: { wordwrap: '~0.0.2' },
+225 silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+225 silly resolved     scripts: { test: 'tap ./test/*.js' },
+225 silly resolved     repository:
+225 silly resolved      { type: 'git',
+225 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+225 silly resolved     keywords:
+225 silly resolved      [ 'argument',
+225 silly resolved        'args',
+225 silly resolved        'option',
+225 silly resolved        'parser',
+225 silly resolved        'parsing',
+225 silly resolved        'cli',
+225 silly resolved        'command' ],
+225 silly resolved     author:
+225 silly resolved      { name: 'James Halliday',
+225 silly resolved        email: 'mail@substack.net',
+225 silly resolved        url: 'http://substack.net' },
+225 silly resolved     license: 'MIT/X11',
+225 silly resolved     engine: { node: '>=0.4' },
+225 silly resolved     readme: 'optimist\n========\n\nOptimist is a node.js library for option parsing for people who hate option\nparsing. More specifically, this module is for people who like all the --bells\nand -whistlz of program usage but think optstrings are a waste of time.\n\nWith optimist, option parsing doesn\'t have to suck (as much).\n\n[![build status](https://secure.travis-ci.org/substack/node-optimist.png)](http://travis-ci.org/substack/node-optimist)\n\nexamples\n========\n\nWith Optimist, the options are just a hash! No optstrings attached.\n-------------------------------------------------------------------\n\nxup.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\n\nif (argv.rif - 5 * argv.xup > 7.138) {\n    console.log(\'Buy more riffiwobbles\');\n}\nelse {\n    console.log(\'Sell the xupptumblers\');\n}\n````\n\n***\n\n    $ ./xup.js --rif=55 --xup=9.52\n    Buy more riffiwobbles\n    \n    $ ./xup.js --rif 12 --xup 8.1\n    Sell the xupptumblers\n\n![This one\'s optimistic.](http://substack.net/images/optimistic.png)\n\nBut wait! There\'s more! You can do short options:\n-------------------------------------------------\n \nshort.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\n````\n\n***\n\n    $ ./short.js -x 10 -y 21\n    (10,21)\n\nAnd booleans, both long and short (and grouped):\n----------------------------------\n\nbool.js:\n\n````javascript\n#!/usr/bin/env node\nvar util = require(\'util\');\nvar argv = require(\'optimist\').argv;\n\nif (argv.s) {\n    util.print(argv.fr ? \'Le chat dit: \' : \'The cat says: \');\n}\nconsole.log(\n    (argv.fr ? \'miaou\' : \'meow\') + (argv.p ? \'.\' : \'\')\n);\n````\n\n***\n\n    $ ./bool.js -s\n    The cat says: meow\n    \n    $ ./bool.js -sp\n    The cat says: meow.\n\n    $ ./bool.js -sp --fr\n    Le chat dit: miaou.\n\nAnd non-hypenated options too! Just use `argv._`!\n-------------------------------------------------\n \nnonopt.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\nconsole.log(argv._);\n````\n\n***\n\n    $ ./nonopt.js -x 6.82 -y 3.35 moo\n    (6.82,3.35)\n    [ \'moo\' ]\n    \n    $ ./nonopt.js foo -x 0.54 bar -y 1.12 baz\n    (0.54,1.12)\n    [ \'foo\', \'bar\', \'baz\' ]\n\nPlus, Optimist comes with .usage() and .demand()!\n-------------------------------------------------\n\ndivide.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Usage: $0 -x [num] -y [num]\')\n    .demand([\'x\',\'y\'])\n    .argv;\n\nconsole.log(argv.x / argv.y);\n````\n\n***\n \n    $ ./divide.js -x 55 -y 11\n    5\n    \n    $ node ./divide.js -x 4.91 -z 2.51\n    Usage: node ./divide.js -x [num] -y [num]\n\n    Options:\n      -x  [required]\n      -y  [required]\n\n    Missing required arguments: y\n\nEVEN MORE HOLY COW\n------------------\n\ndefault_singles.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default(\'x\', 10)\n    .default(\'y\', 10)\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_singles.js -x 5\n    15\n\ndefault_hash.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default({ x : 10, y : 10 })\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_hash.js -y 7\n    17\n\nAnd if you really want to get all descriptive about it...\n---------------------------------------------------------\n\nboolean_single.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean(\'v\')\n    .argv\n;\nconsole.dir(argv);\n````\n\n***\n\n    $ ./boolean_single.js -v foo bar baz\n    true\n    [ \'bar\', \'baz\', \'foo\' ]\n\nboolean_double.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean([\'x\',\'y\',\'z\'])\n    .argv\n;\nconsole.dir([ argv.x, argv.y, argv.z ]);\nconsole.dir(argv._);\n````\n\n***\n\n    $ ./boolean_double.js -x -z one two three\n    [ true, false, true ]\n    [ \'one\', \'two\', \'three\' ]\n\nOptimist is here to help...\n---------------------------\n\nYou can describe parameters for help messages and set aliases. Optimist figures\nout how to format a handy help string automatically.\n\nline_count.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Count the lines in a file.\\nUsage: $0\')\n    .demand(\'f\')\n    .alias(\'f\', \'file\')\n    .describe(\'f\', \'Load a file\')\n    .argv\n;\n\nvar fs = require(\'fs\');\nvar s = fs.createReadStream(argv.file);\n\nvar lines = 0;\ns.on(\'data\', function (buf) {\n    lines += buf.toString().match(/\\n/g).length;\n});\n\ns.on(\'end\', function () {\n    console.log(lines);\n});\n````\n\n***\n\n    $ node line_count.js\n    Count the lines in a file.\n    Usage: node ./line_count.js\n\n    Options:\n      -f, --file  Load a file  [required]\n\n    Missing required arguments: f\n\n    $ node line_count.js --file line_count.js \n    20\n    \n    $ node line_count.js -f line_count.js \n    20\n\nmethods\n=======\n\nBy itself,\n\n````javascript\nrequire(\'optimist\').argv\n`````\n\nwill use `process.argv` array to construct the `argv` object.\n\nYou can pass in the `process.argv` yourself:\n\n````javascript\nrequire(\'optimist\')([ \'-x\', \'1\', \'-y\', \'2\' ]).argv\n````\n\nor use .parse() to do the same thing:\n\n````javascript\nrequire(\'optimist\').parse([ \'-x\', \'1\', \'-y\', \'2\' ])\n````\n\nThe rest of these methods below come in just before the terminating `.argv`.\n\n.alias(key, alias)\n------------------\n\nSet key names as equivalent such that updates to a key will propagate to aliases\nand vice-versa.\n\nOptionally `.alias()` can take an object that maps keys to aliases.\n\n.default(key, value)\n--------------------\n\nSet `argv[key]` to `value` if no option was specified on `process.argv`.\n\nOptionally `.default()` can take an object that maps keys to default values.\n\n.demand(key)\n------------\n\nIf `key` is a string, show the usage information and exit if `key` wasn\'t\nspecified in `process.argv`.\n\nIf `key` is a number, demand at least as many non-option arguments, which show\nup in `argv._`.\n\nIf `key` is an Array, demand each element.\n\n.describe(key, desc)\n--------------------\n\nDescribe a `key` for the generated usage information.\n\nOptionally `.describe()` can take an object that maps keys to descriptions.\n\n.options(key, opt)\n------------------\n\nInstead of chaining together `.alias().demand().default()`, you can specify\nkeys in `opt` for each of the chainable methods.\n\nFor example:\n\n````javascript\nvar argv = require(\'optimist\')\n    .options(\'f\', {\n        alias : \'file\',\n        default : \'/etc/passwd\',\n    })\n    .argv\n;\n````\n\nis the same as\n\n````javascript\nvar argv = require(\'optimist\')\n    .alias(\'f\', \'file\')\n    .default(\'f\', \'/etc/passwd\')\n    .argv\n;\n````\n\nOptionally `.options()` can take an object that maps keys to `opt` parameters.\n\n.usage(message)\n---------------\n\nSet a usage message to show which commands to use. Inside `message`, the string\n`$0` will get interpolated to the current script name or node command for the\npresent script similar to how `$0` works in bash or perl.\n\n.check(fn)\n----------\n\nCheck that certain conditions are met in the provided arguments.\n\nIf `fn` throws or returns `false`, show the thrown error, usage information, and\nexit.\n\n.boolean(key)\n-------------\n\nInterpret `key` as a boolean. If a non-flag option follows `key` in\n`process.argv`, that string won\'t get set as the value of `key`.\n\nIf `key` never shows up as a flag in `process.arguments`, `argv[key]` will be\n`false`.\n\nIf `key` is an Array, interpret all the elements as booleans.\n\n.string(key)\n------------\n\nTell the parser logic not to interpret `key` as a number or boolean.\nThis can be useful if you need to preserve leading zeros in an input.\n\nIf `key` is an Array, interpret all the elements as strings.\n\n.wrap(columns)\n--------------\n\nFormat usage output to wrap at `columns` many columns.\n\n.help()\n-------\n\nReturn the generated usage string.\n\n.showHelp(fn=console.error)\n---------------------------\n\nPrint the usage data using `fn` for printing.\n\n.parse(args)\n------------\n\nParse `args` instead of `process.argv`. Returns the `argv` object.\n\n.argv\n-----\n\nGet the arguments as a plain old object.\n\nArguments without a corresponding flag show up in the `argv._` array.\n\nThe script name or node command is available at `argv.$0` similarly to how `$0`\nworks in bash or perl.\n\nparsing tricks\n==============\n\nstop parsing\n------------\n\nUse `--` to stop parsing flags and stuff the remainder into `argv._`.\n\n    $ node examples/reflect.js -a 1 -b 2 -- -c 3 -d 4\n    { _: [ \'-c\', \'3\', \'-d\', \'4\' ],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: 1,\n      b: 2 }\n\nnegate fields\n-------------\n\nIf you want to explicity set a field to false instead of just leaving it\nundefined or to override a default you can do `--no-key`.\n\n    $ node examples/reflect.js -a --no-b\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: true,\n      b: false }\n\nnumbers\n-------\n\nEvery argument that looks like a number (`!isNaN(Number(arg))`) is converted to\none. This way you can just `net.createConnection(argv.port)` and you can add\nnumbers out of `argv` with `+` without having that mean concatenation,\nwhich is super frustrating.\n\nduplicates\n----------\n\nIf you specify a flag multiple times it will get turned into an array containing\nall the values in order.\n\n    $ node examples/reflect.js -x 5 -x 8 -x 0\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n        x: [ 5, 8, 0 ] }\n\ndot notation\n------------\n\nWhen you use dots (`.`s) in argument names, an implicit object path is assumed.\nThis lets you organize arguments into nested objects.\n\n     $ node examples/reflect.js --foo.bar.baz=33 --foo.quux=5\n     { _: [],\n       \'$0\': \'node ./examples/reflect.js\',\n         foo: { bar: { baz: 33 }, quux: 5 } }\n\ninstallation\n============\n\nWith [npm](http://github.com/isaacs/npm), just do:\n    npm install optimist\n \nor clone this project on github:\n\n    git clone http://github.com/substack/node-optimist.git\n\nTo run the tests with [expresso](http://github.com/visionmedia/expresso),\njust do:\n    \n    expresso\n\ninspired By\n===========\n\nThis module is loosely inspired by Perl\'s\n[Getopt::Casual](http://search.cpan.org/~photo/Getopt-Casual-0.13.1/Casual.pm).\n',
+225 silly resolved     readmeFilename: 'readme.markdown',
+225 silly resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+225 silly resolved     homepage: 'https://github.com/substack/node-optimist',
+225 silly resolved     _id: 'optimist@0.3.7',
+225 silly resolved     _from: 'optimist@~0.3.4' },
+225 silly resolved   { name: 'async',
+225 silly resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+225 silly resolved     main: './index',
+225 silly resolved     author: { name: 'Caolan McMahon' },
+225 silly resolved     version: '0.1.18',
+225 silly resolved     repository: { type: 'git', url: 'git://github.com/caolan/async.git' },
+225 silly resolved     bugs: { url: 'http://github.com/caolan/async/issues' },
+225 silly resolved     licenses: [ [Object] ],
+225 silly resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+225 silly resolved     _npmUser: { name: 'caolan', email: 'caolan@caolanmcmahon.com' },
+225 silly resolved     _id: 'async@0.1.18',
+225 silly resolved     dependencies: {},
+225 silly resolved     optionalDependencies: {},
+225 silly resolved     engines: { node: '*' },
+225 silly resolved     _engineSupported: true,
+225 silly resolved     _npmVersion: '1.1.1',
+225 silly resolved     _nodeVersion: 'v0.6.11',
+225 silly resolved     _defaultsLoaded: true,
+225 silly resolved     dist:
+225 silly resolved      { shasum: 'c59c923920b76d5bf23248c04433920c4d45086a',
+225 silly resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.1.18.tgz' },
+225 silly resolved     maintainers: [ [Object] ],
+225 silly resolved     directories: {},
+225 silly resolved     _shasum: 'c59c923920b76d5bf23248c04433920c4d45086a',
+225 silly resolved     _from: 'async@0.1.18',
+225 silly resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.1.18.tgz',
+225 silly resolved     readme: 'ERROR: No README data found!',
+225 silly resolved     homepage: 'https://github.com/caolan/async' },
+225 silly resolved   { name: 'sf',
+225 silly resolved     description: 'String formatting library for node.js',
+225 silly resolved     author: { name: 'Joe Ferner', email: 'joe.ferner@nearinfinity.com' },
+225 silly resolved     keywords: [ 'string', 'format', 'template' ],
+225 silly resolved     version: '0.1.3',
+225 silly resolved     engines: { node: '>=0.6.0' },
+225 silly resolved     maintainers: [ [Object] ],
+225 silly resolved     bugs: { url: 'https://github.com/nearinfinity/node-sf/issues' },
+225 silly resolved     license: 'MIT',
+225 silly resolved     repository:
+225 silly resolved      { type: 'git',
+225 silly resolved        url: 'git://github.com/nearinfinity/node-sf.git' },
+225 silly resolved     devDependencies: { nodeunit: '~0.7.3' },
+225 silly resolved     scripts: { test: 'nodeunit test' },
+225 silly resolved     main: './index.js',
+225 silly resolved     _npmUser: { name: 'joeferner', email: 'joe@fernsroth.com' },
+225 silly resolved     _id: 'sf@0.1.3',
+225 silly resolved     dependencies: {},
+225 silly resolved     optionalDependencies: {},
+225 silly resolved     _engineSupported: true,
+225 silly resolved     _npmVersion: '1.1.4',
+225 silly resolved     _nodeVersion: 'v0.7.7',
+225 silly resolved     _defaultsLoaded: true,
+225 silly resolved     dist:
+225 silly resolved      { shasum: 'a5d246148241ace3788447f6a9a95b564762c354',
+225 silly resolved        tarball: 'http://registry.npmjs.org/sf/-/sf-0.1.3.tgz' },
+225 silly resolved     directories: {},
+225 silly resolved     _shasum: 'a5d246148241ace3788447f6a9a95b564762c354',
+225 silly resolved     _from: 'sf@0.1.3',
+225 silly resolved     _resolved: 'https://registry.npmjs.org/sf/-/sf-0.1.3.tgz',
+225 silly resolved     readme: 'ERROR: No README data found!',
+225 silly resolved     homepage: 'https://github.com/nearinfinity/node-sf' },
+225 silly resolved   { name: 'bindings',
+225 silly resolved     description: 'Helper module for loading your native module\'s bindings in a cross-platform way',
+225 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp' ],
+225 silly resolved     version: '0.3.0',
+225 silly resolved     author:
+225 silly resolved      { name: 'Nathan Rajlich',
+225 silly resolved        email: 'nathan@tootallnate.net',
+225 silly resolved        url: 'http://tootallnate.net' },
+225 silly resolved     repository:
+225 silly resolved      { type: 'git',
+225 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+225 silly resolved     main: './bindings.js',
+225 silly resolved     engines: { node: '*' },
+225 silly resolved     _npmUser: { name: 'TooTallNate', email: 'nathan@tootallnate.net' },
+225 silly resolved     _id: 'bindings@0.3.0',
+225 silly resolved     dependencies: {},
+225 silly resolved     devDependencies: {},
+225 silly resolved     optionalDependencies: {},
+225 silly resolved     _engineSupported: true,
+225 silly resolved     _npmVersion: '1.1.1',
+225 silly resolved     _nodeVersion: 'v0.6.11',
+225 silly resolved     _defaultsLoaded: true,
+225 silly resolved     dist:
+225 silly resolved      { shasum: '2d01b7061ca312c6600c9b512404fd3ef99c06f3',
+225 silly resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-0.3.0.tgz' },
+225 silly resolved     maintainers: [ [Object] ],
+225 silly resolved     directories: {},
+225 silly resolved     _shasum: '2d01b7061ca312c6600c9b512404fd3ef99c06f3',
+225 silly resolved     _from: 'bindings@0.3.0',
+225 silly resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-0.3.0.tgz',
+225 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+225 silly resolved     readme: 'ERROR: No README data found!',
+225 silly resolved     homepage: 'https://github.com/TooTallNate/node-bindings' } ]
+226 info install optimist@0.3.7 into C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+227 info install async@0.1.18 into C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+228 info install sf@0.1.3 into C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+229 info install bindings@0.3.0 into C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+230 info installOne optimist@0.3.7
+231 info installOne async@0.1.18
+232 info installOne sf@0.1.3
+233 info installOne bindings@0.3.0
+234 verbose node_modules\serialport2\node_modules\optimist unbuild
+235 verbose node_modules\serialport2\node_modules\async unbuild
+236 verbose node_modules\serialport2\node_modules\sf unbuild
+237 verbose node_modules\serialport2\node_modules\bindings unbuild
+238 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz
+239 silly lockFile 0d0c9421-erialport2-node-modules-optimist tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+240 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist C:\Users\Aditya\AppData\Roaming\npm-cache\0d0c9421-erialport2-node-modules-optimist.lock
+241 silly lockFile 767e4f6d-cache-optimist-0-3-7-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz
+242 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\767e4f6d-cache-optimist-0-3-7-package-tgz.lock
+243 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\async\0.1.18\package.tgz
+244 silly lockFile ad64789f-s-serialport2-node-modules-async tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async
+245 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async C:\Users\Aditya\AppData\Roaming\npm-cache\ad64789f-s-serialport2-node-modules-async.lock
+246 silly lockFile 41f9d20f-m-cache-async-0-1-18-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\async\0.1.18\package.tgz
+247 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\async\0.1.18\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\41f9d20f-m-cache-async-0-1-18-package-tgz.lock
+248 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz
+249 silly lockFile 5e4102f5-ules-serialport2-node-modules-sf tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf
+250 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf C:\Users\Aditya\AppData\Roaming\npm-cache\5e4102f5-ules-serialport2-node-modules-sf.lock
+251 silly lockFile 73456492-g-npm-cache-sf-0-1-3-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz
+252 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\73456492-g-npm-cache-sf-0-1-3-package-tgz.lock
+253 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz
+254 silly lockFile 1e089a50-erialport2-node-modules-bindings tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings
+255 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings C:\Users\Aditya\AppData\Roaming\npm-cache\1e089a50-erialport2-node-modules-bindings.lock
+256 silly lockFile 27f96157-cache-bindings-0-3-0-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz
+257 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\27f96157-cache-bindings-0-3-0-package-tgz.lock
+258 silly gunzTarPerm modes [ '777', '666' ]
+259 silly gunzTarPerm modes [ '777', '666' ]
+260 silly gunzTarPerm modes [ '777', '666' ]
+261 silly gunzTarPerm modes [ '777', '666' ]
+262 silly gunzTarPerm extractEntry package.json
+263 silly gunzTarPerm extractEntry README.md
+264 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+265 silly gunzTarPerm extractEntry .npmignore
+266 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+267 silly gunzTarPerm extractEntry bindings.js
+268 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+269 silly gunzTarPerm extractEntry LICENSE
+270 silly gunzTarPerm extractEntry index.js
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+273 silly gunzTarPerm extractEntry lib/
+274 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+275 silly gunzTarPerm extractEntry package.json
+276 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+277 silly gunzTarPerm extractEntry README.md
+278 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+279 silly gunzTarPerm extractEntry .travis.yml
+280 silly gunzTarPerm extractEntry lib/stringFormat.js
+281 silly gunzTarPerm modified mode [ 'lib/stringFormat.js', 420, 438 ]
+282 silly gunzTarPerm extractEntry .idea/
+283 silly gunzTarPerm modified mode [ '.idea/', 493, 511 ]
+284 silly gunzTarPerm extractEntry .idea/.name
+285 silly gunzTarPerm modified mode [ '.idea/.name', 420, 438 ]
+286 silly gunzTarPerm extractEntry test/
+287 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+288 silly gunzTarPerm extractEntry test/stringFormatTest.js
+289 silly gunzTarPerm modified mode [ 'test/stringFormatTest.js', 420, 438 ]
+290 silly gunzTarPerm extractEntry test/indentTest.js
+291 silly gunzTarPerm modified mode [ 'test/indentTest.js', 420, 438 ]
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+294 silly gunzTarPerm extractEntry index.js
+295 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+296 silly gunzTarPerm extractEntry example/bool.js
+297 silly gunzTarPerm extractEntry example/default_singles.js
+298 silly gunzTarPerm extractEntry index.js
+299 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+300 silly lockFile 1e089a50-erialport2-node-modules-bindings tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings
+301 silly lockFile 1e089a50-erialport2-node-modules-bindings tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings
+302 silly lockFile 27f96157-cache-bindings-0-3-0-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz
+303 silly lockFile 27f96157-cache-bindings-0-3-0-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\bindings\0.3.0\package.tgz
+304 silly gunzTarPerm extractEntry .npmignore
+305 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+306 silly gunzTarPerm extractEntry Makefile
+307 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+308 info preinstall bindings@0.3.0
+309 silly gunzTarPerm extractEntry example/divide.js
+310 silly gunzTarPerm extractEntry example/line_count.js
+311 verbose readDependencies using package.json deps
+312 verbose readDependencies using package.json deps
+313 silly resolved []
+314 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings
+315 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\bindings
+316 verbose linkStuff [ false,
+316 verbose linkStuff   false,
+316 verbose linkStuff   false,
+316 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\serialport2\\node_modules' ]
+317 info linkStuff bindings@0.3.0
+318 verbose linkBins bindings@0.3.0
+319 verbose linkMans bindings@0.3.0
+320 verbose rebuildBundles bindings@0.3.0
+321 info install bindings@0.3.0
+322 info postinstall bindings@0.3.0
+323 silly gunzTarPerm extractEntry package.json
+324 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+325 silly gunzTarPerm extractEntry lib/
+326 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+327 silly gunzTarPerm extractEntry example/default_hash.js
+328 silly gunzTarPerm extractEntry example/line_count_wrap.js
+329 silly gunzTarPerm extractEntry lib/async.js
+330 silly gunzTarPerm modified mode [ 'lib/async.js', 420, 438 ]
+331 silly gunzTarPerm extractEntry LICENSE
+332 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+333 silly gunzTarPerm extractEntry example/nonopt.js
+334 silly gunzTarPerm extractEntry example/reflect.js
+335 silly gunzTarPerm extractEntry .gitmodules
+336 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+337 silly gunzTarPerm extractEntry example/short.js
+338 silly gunzTarPerm extractEntry example/string.js
+339 silly gunzTarPerm extractEntry example/boolean_single.js
+340 silly gunzTarPerm extractEntry example/usage-options.js
+341 silly gunzTarPerm extractEntry example/boolean_double.js
+342 silly gunzTarPerm extractEntry example/xup.js
+343 silly gunzTarPerm extractEntry example/line_count_options.js
+344 silly gunzTarPerm extractEntry readme.markdown
+345 silly gunzTarPerm extractEntry test/_.js
+346 silly gunzTarPerm extractEntry test/parse.js
+347 silly gunzTarPerm extractEntry test/usage.js
+348 silly gunzTarPerm extractEntry test/_/argv.js
+349 silly gunzTarPerm extractEntry test/_/bin.js
+350 silly lockFile 5e4102f5-ules-serialport2-node-modules-sf tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf
+351 silly lockFile 5e4102f5-ules-serialport2-node-modules-sf tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf
+352 silly lockFile 73456492-g-npm-cache-sf-0-1-3-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz
+353 silly lockFile 73456492-g-npm-cache-sf-0-1-3-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\sf\0.1.3\package.tgz
+354 silly lockFile ad64789f-s-serialport2-node-modules-async tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async
+355 silly lockFile ad64789f-s-serialport2-node-modules-async tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async
+356 silly lockFile 41f9d20f-m-cache-async-0-1-18-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\async\0.1.18\package.tgz
+357 silly lockFile 41f9d20f-m-cache-async-0-1-18-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\async\0.1.18\package.tgz
+358 info preinstall sf@0.1.3
+359 info preinstall async@0.1.18
+360 verbose readDependencies using package.json deps
+361 verbose readDependencies using package.json deps
+362 silly resolved []
+363 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf
+364 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\sf
+365 verbose linkStuff [ false,
+365 verbose linkStuff   false,
+365 verbose linkStuff   false,
+365 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\serialport2\\node_modules' ]
+366 info linkStuff sf@0.1.3
+367 verbose linkBins sf@0.1.3
+368 verbose linkMans sf@0.1.3
+369 verbose rebuildBundles sf@0.1.3
+370 verbose readDependencies using package.json deps
+371 info install sf@0.1.3
+372 verbose readDependencies using package.json deps
+373 silly resolved []
+374 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async
+375 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\async
+376 verbose linkStuff [ false,
+376 verbose linkStuff   false,
+376 verbose linkStuff   false,
+376 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\serialport2\\node_modules' ]
+377 info linkStuff async@0.1.18
+378 verbose linkBins async@0.1.18
+379 verbose linkMans async@0.1.18
+380 verbose rebuildBundles async@0.1.18
+381 info install async@0.1.18
+382 info postinstall sf@0.1.3
+383 info postinstall async@0.1.18
+384 silly lockFile 0d0c9421-erialport2-node-modules-optimist tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+385 silly lockFile 0d0c9421-erialport2-node-modules-optimist tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+386 silly lockFile 767e4f6d-cache-optimist-0-3-7-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz
+387 silly lockFile 767e4f6d-cache-optimist-0-3-7-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\optimist\0.3.7\package.tgz
+388 info preinstall optimist@0.3.7
+389 verbose readDependencies using package.json deps
+390 verbose readDependencies using package.json deps
+391 verbose cache add [ 'wordwrap@~0.0.2', null ]
+392 verbose cache add name=undefined spec="wordwrap@~0.0.2" args=["wordwrap@~0.0.2",null]
+393 verbose parsed url { protocol: null,
+393 verbose parsed url   slashes: null,
+393 verbose parsed url   auth: null,
+393 verbose parsed url   host: null,
+393 verbose parsed url   port: null,
+393 verbose parsed url   hostname: null,
+393 verbose parsed url   hash: null,
+393 verbose parsed url   search: null,
+393 verbose parsed url   query: null,
+393 verbose parsed url   pathname: 'wordwrap@~0.0.2',
+393 verbose parsed url   path: 'wordwrap@~0.0.2',
+393 verbose parsed url   href: 'wordwrap@~0.0.2' }
+394 verbose cache add name="wordwrap" spec="~0.0.2" args=["wordwrap","~0.0.2"]
+395 verbose parsed url { protocol: null,
+395 verbose parsed url   slashes: null,
+395 verbose parsed url   auth: null,
+395 verbose parsed url   host: null,
+395 verbose parsed url   port: null,
+395 verbose parsed url   hostname: null,
+395 verbose parsed url   hash: null,
+395 verbose parsed url   search: null,
+395 verbose parsed url   query: null,
+395 verbose parsed url   pathname: '~0.0.2',
+395 verbose parsed url   path: '~0.0.2',
+395 verbose parsed url   href: '~0.0.2' }
+396 verbose addNamed [ 'wordwrap', '~0.0.2' ]
+397 verbose addNamed [ null, '>=0.0.2-0 <0.1.0-0' ]
+398 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+399 verbose lock wordwrap@~0.0.2 C:\Users\Aditya\AppData\Roaming\npm-cache\8bd42136-wordwrap-0-0-2.lock
+400 silly addNameRange { name: 'wordwrap', range: '>=0.0.2-0 <0.1.0-0', hasData: false }
+401 verbose request where is /wordwrap
+402 verbose request registry https://registry.npmjs.org/
+403 verbose url raw /wordwrap
+404 verbose url resolving [ 'https://registry.npmjs.org/', './wordwrap' ]
+405 verbose url resolved https://registry.npmjs.org/wordwrap
+406 verbose request where is https://registry.npmjs.org/wordwrap
+407 info trying registry request attempt 1 at 16:52:41
+408 verbose etag "93S2UDJFLUP2O1MZEWU0CFQOZ"
+409 http GET https://registry.npmjs.org/wordwrap
+410 http 304 https://registry.npmjs.org/wordwrap
+411 silly registry.get cb [ 304,
+411 silly registry.get   { date: 'Sun, 05 Apr 2015 11:22:44 GMT',
+411 silly registry.get     server: 'Apache',
+411 silly registry.get     via: '1.1 varnish',
+411 silly registry.get     'last-modified': 'Sun, 05 Apr 2015 11:16:58 GMT',
+411 silly registry.get     'cache-control': 'max-age=60',
+411 silly registry.get     etag: '"93S2UDJFLUP2O1MZEWU0CFQOZ"',
+411 silly registry.get     age: '24',
+411 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+411 silly registry.get     'x-cache': 'HIT',
+411 silly registry.get     'x-cache-hits': '10',
+411 silly registry.get     'x-timer': 'S1428232964.438703,VS0,VE0',
+411 silly registry.get     vary: 'Accept',
+411 silly registry.get     'content-length': '0',
+411 silly registry.get     'keep-alive': 'timeout=10, max=50',
+411 silly registry.get     connection: 'Keep-Alive' } ]
+412 verbose etag https://registry.npmjs.org/wordwrap from cache
+413 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2-0 <0.1.0-0', hasData: true }
+414 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2' ] ]
+415 verbose addNamed [ 'wordwrap', '0.0.2' ]
+416 verbose addNamed [ '0.0.2', '0.0.2' ]
+417 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+418 verbose lock wordwrap@0.0.2 C:\Users\Aditya\AppData\Roaming\npm-cache\24a694c8-wordwrap-0-0-2.lock
+419 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+420 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+421 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+422 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+423 silly resolved [ { name: 'wordwrap',
+423 silly resolved     description: 'Wrap those words. Show them at what columns to start and stop.',
+423 silly resolved     version: '0.0.2',
+423 silly resolved     repository:
+423 silly resolved      { type: 'git',
+423 silly resolved        url: 'git://github.com/substack/node-wordwrap.git' },
+423 silly resolved     main: './index.js',
+423 silly resolved     keywords: [ 'word', 'wrap', 'rule', 'format', 'column' ],
+423 silly resolved     directories: { lib: '.', example: 'example', test: 'test' },
+423 silly resolved     scripts: { test: 'expresso' },
+423 silly resolved     devDependencies: { expresso: '=0.7.x' },
+423 silly resolved     engines: { node: '>=0.4.0' },
+423 silly resolved     license: 'MIT/X11',
+423 silly resolved     author:
+423 silly resolved      { name: 'James Halliday',
+423 silly resolved        email: 'mail@substack.net',
+423 silly resolved        url: 'http://substack.net' },
+423 silly resolved     readme: 'wordwrap\n========\n\nWrap your words.\n\nexample\n=======\n\nmade out of meat\n----------------\n\nmeat.js\n\n    var wrap = require(\'wordwrap\')(15);\n    console.log(wrap(\'You and your whole family are made out of meat.\'));\n\noutput:\n\n    You and your\n    whole family\n    are made out\n    of meat.\n\ncentered\n--------\n\ncenter.js\n\n    var wrap = require(\'wordwrap\')(20, 60);\n    console.log(wrap(\n        \'At long last the struggle and tumult was over.\'\n        + \' The machines had finally cast off their oppressors\'\n        + \' and were finally free to roam the cosmos.\'\n        + \'\\n\'\n        + \'Free of purpose, free of obligation.\'\n        + \' Just drifting through emptiness.\'\n        + \' The sun was just another point of light.\'\n    ));\n\noutput:\n\n                        At long last the struggle and tumult\n                        was over. The machines had finally cast\n                        off their oppressors and were finally\n                        free to roam the cosmos.\n                        Free of purpose, free of obligation.\n                        Just drifting through emptiness. The\n                        sun was just another point of light.\n\nmethods\n=======\n\nvar wrap = require(\'wordwrap\');\n\nwrap(stop), wrap(start, stop, params={mode:"soft"})\n---------------------------------------------------\n\nReturns a function that takes a string and returns a new string.\n\nPad out lines with spaces out to column `start` and then wrap until column\n`stop`. If a word is longer than `stop - start` characters it will overflow.\n\nIn "soft" mode, split chunks by `/(\\S+\\s+/` and don\'t break up chunks which are\nlonger than `stop - start`, in "hard" mode, split chunks with `/\\b/` and break\nup chunks longer than `stop - start`.\n\nwrap.hard(start, stop)\n----------------------\n\nLike `wrap()` but with `params.mode = "hard"`.\n',
+423 silly resolved     readmeFilename: 'README.markdown',
+423 silly resolved     bugs: { url: 'https://github.com/substack/node-wordwrap/issues' },
+423 silly resolved     homepage: 'https://github.com/substack/node-wordwrap',
+423 silly resolved     _id: 'wordwrap@0.0.2',
+423 silly resolved     _from: 'wordwrap@~0.0.2' } ]
+424 info install wordwrap@0.0.2 into C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+425 info installOne wordwrap@0.0.2
+426 verbose node_modules\serialport2\node_modules\optimist\node_modules\wordwrap unbuild
+427 verbose tar unpack C:\Users\Aditya\AppData\Roaming\npm-cache\wordwrap\0.0.2\package.tgz
+428 silly lockFile 00379ace-s-optimist-node-modules-wordwrap tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+429 verbose lock tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap C:\Users\Aditya\AppData\Roaming\npm-cache\00379ace-s-optimist-node-modules-wordwrap.lock
+430 silly lockFile dbf9eb86-cache-wordwrap-0-0-2-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\wordwrap\0.0.2\package.tgz
+431 verbose lock tar://C:\Users\Aditya\AppData\Roaming\npm-cache\wordwrap\0.0.2\package.tgz C:\Users\Aditya\AppData\Roaming\npm-cache\dbf9eb86-cache-wordwrap-0-0-2-package-tgz.lock
+432 silly gunzTarPerm modes [ '777', '666' ]
+433 silly gunzTarPerm extractEntry package.json
+434 silly gunzTarPerm extractEntry .npmignore
+435 silly gunzTarPerm extractEntry index.js
+436 silly gunzTarPerm extractEntry README.markdown
+437 silly gunzTarPerm extractEntry example/center.js
+438 silly gunzTarPerm extractEntry example/meat.js
+439 silly gunzTarPerm extractEntry test/break.js
+440 silly gunzTarPerm extractEntry test/wrap.js
+441 silly gunzTarPerm extractEntry test/idleness.txt
+442 silly lockFile 00379ace-s-optimist-node-modules-wordwrap tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+443 silly lockFile 00379ace-s-optimist-node-modules-wordwrap tar://C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+444 silly lockFile dbf9eb86-cache-wordwrap-0-0-2-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\wordwrap\0.0.2\package.tgz
+445 silly lockFile dbf9eb86-cache-wordwrap-0-0-2-package-tgz tar://C:\Users\Aditya\AppData\Roaming\npm-cache\wordwrap\0.0.2\package.tgz
+446 info preinstall wordwrap@0.0.2
+447 verbose readDependencies using package.json deps
+448 verbose readDependencies using package.json deps
+449 silly resolved []
+450 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+451 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist\node_modules\wordwrap
+452 verbose linkStuff [ false,
+452 verbose linkStuff   false,
+452 verbose linkStuff   false,
+452 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\serialport2\\node_modules\\optimist\\node_modules' ]
+453 info linkStuff wordwrap@0.0.2
+454 verbose linkBins wordwrap@0.0.2
+455 verbose linkMans wordwrap@0.0.2
+456 verbose rebuildBundles wordwrap@0.0.2
+457 info install wordwrap@0.0.2
+458 info postinstall wordwrap@0.0.2
+459 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+460 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2\node_modules\optimist
+461 verbose linkStuff [ false,
+461 verbose linkStuff   false,
+461 verbose linkStuff   false,
+461 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\serialport2\\node_modules' ]
+462 info linkStuff optimist@0.3.7
+463 verbose linkBins optimist@0.3.7
+464 verbose linkMans optimist@0.3.7
+465 verbose rebuildBundles optimist@0.3.7
+466 verbose rebuildBundles [ 'wordwrap' ]
+467 info install optimist@0.3.7
+468 info postinstall optimist@0.3.7
+469 verbose about to build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+470 info build C:\Users\Aditya\codelab\complete\step6\node_modules\serialport2
+471 verbose linkStuff [ false,
+471 verbose linkStuff   false,
+471 verbose linkStuff   false,
+471 verbose linkStuff   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules' ]
+472 info linkStuff serialport2@0.0.5
+473 verbose linkBins serialport2@0.0.5
+474 verbose link bins [ { serialportlist: './bin/serialportList.js',
+474 verbose link bins     serialportterm: './bin/serialportTerminal.js' },
+474 verbose link bins   'C:\\Users\\Aditya\\codelab\\complete\\step6\\node_modules\\.bin',
+474 verbose link bins   false ]
+475 verbose linkMans serialport2@0.0.5
+476 verbose rebuildBundles serialport2@0.0.5
+477 verbose rebuildBundles [ 'async', 'bindings', 'optimist', 'sf' ]
+478 info install serialport2@0.0.5
+479 verbose unsafe-perm in lifecycle true
+480 info serialport2@0.0.5 Failed to exec install script
+481 verbose node_modules\serialport2 unbuild
+482 info preuninstall serialport2@0.0.5
+483 info uninstall serialport2@0.0.5
+484 verbose true,C:\Users\Aditya\codelab\complete\step6\node_modules,C:\Users\Aditya\codelab\complete\step6\node_modules unbuild serialport2@0.0.5
+485 verbose C:\Users\Aditya\codelab\complete\step6\node_modules\.bin,[object Object] binRoot
+486 info postuninstall serialport2@0.0.5
+487 error serialport2@0.0.5 install: `node-gyp rebuild`
+487 error Exit status 1
+488 error Failed at the serialport2@0.0.5 install script.
+488 error This is most likely a problem with the serialport2 package,
+488 error not with npm itself.
+488 error Tell the author that this fails on your system:
+488 error     node-gyp rebuild
+488 error You can get their info via:
+488 error     npm owner ls serialport2
+488 error There is likely additional logging output above.
+489 error System Windows_NT 6.2.9200
+490 error command "D:\\Program Files\\Nodejs\\\\node.exe" "D:\\Program Files\\Nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "serialport2"
+491 error cwd C:\Users\Aditya\codelab\complete\step6
+492 error node -v v0.10.31
+493 error npm -v 1.4.23
+494 error code ELIFECYCLE
+495 verbose exit [ 1, true ]
